@@ -1,0 +1,12 @@
+<p> The template has loaded </p>
+
+{{dictionary}}
+<! This dictionary value can be found on views.py >
+
+
+<h1>Word Counter</h1>
+
+<form action="{% url 'count' %}"> <! this name sends data to urls.py >
+  <textarea cols="40" row="5" name="fulltext"></textarea>
+  <p><input type="submit" value="Count"/></p>
+</form>
